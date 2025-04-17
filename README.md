@@ -1,6 +1,6 @@
-# IP4RS Dependencies
+# IPL4EO Dependencies
 
-> Dependencies for the IP4RS course.
+> Dependencies for the IPL4EO course.
 
 The repository uses `micromamba` under the hood and provides some automations via a `justfile`
 (see [just documentation for more information](https://github.com/casey/just)).
@@ -22,7 +22,7 @@ to missing support of Windows libraries for some dependencies.
 1. Install [just](https://github.com/casey/just)
 2. Move to the dependency directory and run `just install_env_<PLATFORM>`
 3. Wait for the command to finish; might take up to 10min for downloading & unpacking
-4. Start `jupyter lab` (`just jupyter`) and select the `ip4rs` kernel
+4. Start `jupyter lab` (`just jupyter`) and select the `IPL4EO` kernel
 
 ### Running over Google Colab
 If you _need_ a GPU, you _have_ to select the GPU instance before proceeding!
@@ -46,7 +46,7 @@ Now we can install our dependencies as follows:
 import condacolab
 condacolab.check()
 
-!curl https://raw.githubusercontent.com/kai-tub/ip4rs-dependencies/main/conda-linux-64.lock.yml >> lock.yml
+!curl https://raw.githubusercontent.com/jonasklotz/IPL4EO-dependencies/main/conda-linux-64.lock.yml >> lock.yml
 !mamba env update -n base -f lock.yml
 ```
 
