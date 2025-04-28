@@ -43,6 +43,9 @@ dependencies = [
   "tqdm",
   "tensorboard",
   "lightning",
+  "folium",
+  "mapclassify",
+  "umap-learn",
 ]
 
 # FUTURE: uv2nix tries to also resolve darwin which fails for the given package!
